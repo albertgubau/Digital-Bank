@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Essential metalables -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO: Title and description -->
+    <title>Digital Bank - Home</title>
+    <meta
+      name="description"
+      content="Digital bank landing page. Abre tu cuenta digital en minutos."
+    />
+
+    <!-- Open Graph metalabels to share it though social media -->
+    <meta property="og:title" content="Digital bank" />
+    <meta
+      property="og:description"
+      content="Digital bank. Abre tu cuenta digital en minutos."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.corporatefinanceinstitute.com/assets/money-2.jpeg"
+    />
+    <meta
+      property="og:url"
+      content="https://albertgubau.github.io/Digital-Bank/"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Landing Page de Ejemplo" />
+    <meta
+      name="twitter:description"
+      content="Digital bank landing page. Abre tu cuenta digital en minutos."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cdn.corporatefinanceinstitute.com/assets/money-2.jpeg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon-16x16.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a href="#home" class="navbar-logo" tabindex="0">Digital Bank</a>
+      <nav aria-label="Menú principal">
+        <ul class="navbar-menu">
+          <li><a href="#home" class="navbar-link" tabindex="0">Inicio</a></li>
+          <li>
+            <a href="#benefits" class="navbar-link" tabindex="0">Beneficios</a>
+          </li>
+          <li>
+            <a href="#testimonials" class="navbar-link" tabindex="0"
+              >Testimonios</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link" tabindex="0">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="menu-toggle"
+        aria-label="Abrir menú"
+        id="mobile-menu"
+        tabindex="0"
+      >
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="hero" tabindex="-1">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 tabindex="0">Abre tu Cuenta Digital en Minutos</h1>
+            <p tabindex="0">Sin comisiones, 100% online</p>
+            <a
+              class="see-more-btn"
+              href="#benefits"
+              role="button"
+              aria-label="Quiero mi cuenta"
+              tabindex="0"
+            >
+              ¡Quiero mi cuenta!
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" tabindex="-1">
+        <div class="benefits-container">
+          <div class="benefits-question">
+            <h2 tabindex="0" class="scroll-element">¿Por qué Digital Bank?</h2>
+            <p tabindex="0" class="scroll-element">
+              ¡Aquí tienes algunos de nuestros maravillosos beneficios!
+            </p>
+          </div>
+          <div class="benefits-cards-container">
+            <div class="benefit-card" tabindex="0">
+              <i class="fa fa-hand-holding-usd" aria-hidden="true"></i>
+              <h2>Sin comisiones</h2>
+              <p>Ahorra en tarifas bancarias.</p>
+            </div>
+
+            <div class="benefit-card" tabindex="0">
+              <i class="fa fa-credit-card" aria-hidden="true"></i>
+              <h2>Tarjeta Digital</h2>
+              <p>Compras seguras online.</p>
+            </div>
+
+            <div class="benefit-card" tabindex="0">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <h2>Transferencias Instantáneas</h2>
+              <p>Envía dinero al instante.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" tabindex="-1">
+        <div class="testimonials-container">
+          <h2 tabindex="0">Testimonios</h2>
+          <p tabindex="0">
+            ¿Aún estás dudando? ¡Lee algunas de las opiniones de nuestros
+            clientes!
+          </p>
+          <div class="testimonial-card" tabindex="0">
+            <img
+              src="./assets/user-avatar.webp"
+              alt="Foto de María Pérez"
+              class="testimonial-img"
+            />
+            <div class="testimonial-text">
+              <h6 tabindex="0">María Pérez</h6>
+              <p tabindex="0">
+                ¡Digital Bank ha cambiado mi vida! Ahora puedo gestionar mis
+                finanzas desde cualquier lugar.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card" tabindex="0">
+            <img
+              src="./assets/user-avatar.webp"
+              alt="Foto de Juan García"
+              class="testimonial-img"
+            />
+            <div class="testimonial-text">
+              <h6 tabindex="0">Juan García</h6>
+              <p tabindex="0">
+                ¡Increíble! ¡Abrí mi cuenta en menos de 5 minutos y sin salir de
+                casa!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" tabindex="-1">
+        <div class="contact-form-container">
+          <h2 tabindex="0">Contacta con Digital Bank</h2>
+          <p tabindex="0">
+            Rellena el formulario y nos pondremos en contacto contigo lo antes
+            posible.
+          </p>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nombre *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Introduce tu nombre"
+                required
+                aria-required="true"
+              />
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Introduce tu correo electrónico"
+                required
+                aria-required="true"
+              />
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Escribe tu mensaje"
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <button type="submit" tabindex="0">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a
+          href="https://www.github.com/albertgubau"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Github"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/albert-gubau/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p tabindex="0">
+        &copy; 2024 Albert Gubau. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <!-- Javascript entry point -->
+    <script src="app.js"></script>
+  </body>
+</html>
